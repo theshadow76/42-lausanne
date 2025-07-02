@@ -1,0 +1,22 @@
+1,3c1,2
+< STARWARS$
+< Episode IV, A NEW HOPE It is a period of civil war.$
+< $
+---
+> STARWARS
+> Episode IV, A NEW HOPE It is a period of civil war.
+5c4
+< Galactic Empire.$
+---
+> Galactic Empire.
+7,9c6,7
+< DEATH STAR,$
+< an armored space station with enough power to destroy an entire planet.$
+< $
+---
+> DEATH STAR,
+> an armored space station with enough power to destroy an entire planet.
+11c9
+< the stolen plans that can save her people and restore freedom to the galaxy...$
+---
+> the stolen plans that can save her people and restore freedom to the galaxy...
