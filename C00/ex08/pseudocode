@@ -1,0 +1,88 @@
+// Function prototype (as required by the exercise)
+void ft_print_combn(int n);
+
+// Main function logic
+FUNCTION ft_print_combn(int n):
+  // Input validation: n must be between 1 and 9 (exclusive)
+  IF n <= 0 OR n >= 10 THEN
+    RETURN // Do nothing for invalid input
+  END IF
+
+  // Declare an array to hold the current combination of digits
+  // In C, this would be `int combination_array[10];` or `int *combination_array;`
+  // since n is small, a fixed size array is fine.
+  DECLARE int combination_array[10] // Max possible n is 9, so size 10 is safe
+
+  // Initialize the first combination
+  // For n=2, combination_array will be [0, 1, ?, ?, ...]
+  // For n=3, combination_array will be [0, 1, 2, ?, ...]
+  FOR i FROM 0 TO n-1:
+    combination_array[i] = i
+  END FOR
+
+  // Loop to generate and print combinations
+  WHILE TRUE:
+    // Print the current combination
+    CALL print_combination_helper(combination_array, n)
+
+    // Check if the current combination is the absolute last one
+    // The last combination will have digits: (10-n), (10-n)+1, ..., 9
+    DECLARE bool is_last = TRUE
+    FOR k FROM 0 TO n-1:
+      IF combination_array[k] != (10 - n + k) THEN
+        is_last = FALSE
+        BREAK
+      END IF
+    END FOR
+
+    // If it's the last combination, exit the loop
+    IF is_last THEN
+      BREAK
+    END IF
+
+    // If not the last, print the comma and space separator
+    CALL write_char(',') // `write(1, ",", 1);`
+    CALL write_char(' ') // `write(1, " ", 1);`
+
+    // Find the rightmost digit that can be incremented
+    // Iterate from right to left (from n-1 down to 0)
+    DECLARE int i = n - 1
+    WHILE i >= 0:
+      // Calculate the maximum allowed value for the current digit `combination_array[i]`
+      // This ensures subsequent digits can still be in ascending order up to 9.
+      // Example: If n=2, `combination_array[0]` can go up to 8 (so `combination_array[1]` can be 9)
+      // Example: If n=3, `combination_array[1]` can go up to 8 (so `combination_array[2]` can be 9)
+      DECLARE int max_value_for_current_digit = 9 - (n - 1 - i)
+
+      IF combination_array[i] < max_value_for_current_digit THEN
+        BREAK // Found a digit that can be incremented
+      END IF
+      i = i - 1
+    END WHILE
+
+    // Increment the found digit
+    combination_array[i] = combination_array[i] + 1
+
+    // Update subsequent digits to maintain ascending order
+    // Example: If combination was [0,9] for n=2, after incrementing combination_array[0] to 1,
+    // combination becomes [1, ?]. We then set combination_array[1] to 2.
+    FOR j FROM i + 1 TO n - 1:
+      combination_array[j] = combination_array[j-1] + 1
+    END FOR
+
+  END WHILE
+
+// Helper function to print a single combination
+// This function would use `write` to print each character
+FUNCTION print_combination_helper(int combination_array[], int n):
+  FOR i FROM 0 TO n-1:
+    DECLARE char digit_char = '0' + combination_array[i]
+    CALL write_char(digit_char) // `write(1, &digit_char, 1);`
+  END FOR
+
+// Utility function to write a single character (simulates `write`)
+// This would be a simple wrapper around the `write` syscall.
+FUNCTION write_char(char c):
+  // In C, this would be: `write(1, &c, 1);`
+  // For pseudocode, just represent the action.
+  PRINT c
