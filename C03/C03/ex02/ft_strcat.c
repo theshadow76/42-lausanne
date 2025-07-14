@@ -6,23 +6,19 @@
 /*   By: vwalker <marvin@42.fr>                        +#+                    */
 /*                                                    +#+                     */
 /*   Created: 2025/07/01 15:21:12 by vwalker        #+#    #+#                */
-/*   Updated: 2025/07/01 15:31:04 by vwalker        ########   odam.nl        */
+/*   Updated: 2025/07/03 11:30:39 by vwalker        ########   odam.nl        */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: yourlogin <chguerre@student.42lausanne.ch>    +#+  +:+       +#+     */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/01 14:57:01 by yourlogin         #+#    #+#             */
-/*   Updated: 2025/07/01 15:10:25 by yourlogin        ###   ########.ch       */
-/*                                                                            */
-/* ************************************************************************** */
+int	ft_strlen(char *str)
+{
+	unsigned int	i;
 
-#include <unistd.h>
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
+}
 
 char	*ft_strcat(char *dest, char *src)
 {
@@ -30,13 +26,12 @@ char	*ft_strcat(char *dest, char *src)
 	int	j;
 
 	i = 0;
-	j = 0;
-	while (dest[i])
-		i++;
-	while (src[j] != '\0')
+	j = ft_strlen(dest);
+	while (src[i] != '\0')
 	{
-		dest [j + i] = src[j];
-		j++;
+		dest[j + i] = src[i];
+		i++;
 	}
+	dest[j + i] = '\0';
 	return (dest);
 }
