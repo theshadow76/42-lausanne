@@ -1,0 +1,48 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+c2r8s9.42lausanne.ch
+Linux 6.6.72-x64v3-t2-jammy-xanmod1 x86_64
+$> date
+Thu Jul 17 10:24:09 AM CEST 2025
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42lausanne.ch:vogsphere-practice/vwalker_practice_practice-exam_09h35m48s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmp4mymh0tc/user log --pretty='%H - %an, %ad : %s'
+2d5abd5fa87c4b663fdb6aca59df22cefd152277 - The GOAT from billionairs.com, Thu Jul 17 10:17:48 2025 +0200 : Init
+6c6a7aaa319a0401d534eaea11bc22878095e424 - The GOAT from billionairs.com, Thu Jul 17 10:17:12 2025 +0200 : Init
+65d28c442dd3b963d51bd6d36a0d3c128bf18160 - The GOAT from billionairs.com, Thu Jul 17 10:07:20 2025 +0200 : Init
+d6187df711dcf87045390ed0012e9b54a938a4eb - The GOAT from billionairs.com, Thu Jul 17 09:50:06 2025 +0200 : Init
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmp4mymh0tc/user
+/tmp/tmp4mymh0tc/user:
+total 12
+drwxr-xr-x 2 root root 4096 Jul 17 10:24 aff_c
+-rw-r--r-- 1 root root 1149 Jul 17 10:24 __GIT_HISTORY
+drwxr-xr-x 2 root root 4096 Jul 17 10:24 rev_print
+
+/tmp/tmp4mymh0tc/user/aff_c:
+total 24
+-rw-r--r-- 1 root root  1437 Jul 17 10:24 aff_c.c
+-rwxr-xr-x 1 root root 15952 Jul 17 10:24 a.out
+-rw-r--r-- 1 root root   263 Jul 17 10:24 test
+
+/tmp/tmp4mymh0tc/user/rev_print:
+total 20
+-rwxr-xr-x 1 root root 15992 Jul 17 10:24 a.out
+-rw-r--r-- 1 root root  1129 Jul 17 10:24 rev_print.c
+ 
+= rev_print ====================================================================
+$> cc -Wextra -Wall -Werror main.c rev_print.c -o user_exe 
+rev_print.c:32:3: error: implicit declaration of function 'write' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+                write(1, &str[len], 1);
+                ^
+1 error generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================

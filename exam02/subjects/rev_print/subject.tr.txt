@@ -1,0 +1,30 @@
+Assignment name  : rev_print
+Expected files   : rev_print.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Bir string(metin)'i tersten yazdıran bir fonksiyon yazın.
+Fonksiyon parametresini döndürmelidir.
+Unutmayın ki string(metin)'in içeriği değiştirilmeyecektir.
+Fonksiyonunuz aşağıdaki gibi tanımlanmalıdır:
+
+char    *rev_print(char *str);
+
+Örnekler:
+
+int	main(void)
+{
+	rev_print("altin kapilar kan oldu");
+	write(1, "\n", 1);
+	rev_print("Hedef ben miyim");
+	write(1, "\n", 1);
+	rev_print("");
+	write(1, "\n", 1);
+	return (0);
+}
+
+$> ./a.out | cat -e
+udlo nak ralipak nitla$
+miyim neb fedeH$
+$
+$>

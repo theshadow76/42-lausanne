@@ -1,0 +1,29 @@
+Assignment name  : rot_13
+Expected files   : rot_13.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Bir string(metin) alıp her bir harfini alfabedeki 13 harf sonrasındaki harf ile
+değiştirip ekranda görüntüleyen bir program yazın. Alfabe sırası olarak
+İngilizce alfabesini esas alın.
+
+'z', 'm' olmalı ve 'Z' de 'M' olmalı. Büyük harf/küçük harf değişmemeli.
+
+Çıktı \n ile sonlanmalıdır.
+
+Argüman sayısı 1 değilse program \n görüntülemelidir.
+
+Örnek:
+
+$>./rot_13 "abc"
+nop
+$>./rot_13 "Benim atim Harika." | cat -e
+Oravz ngvz Unevxn.$
+$>./rot_13 "AkjhZ zLKIJz , 23y " | cat -e
+NxwuM mYXVWm , 23l $
+$>./rot_13 | cat -e
+$
+$>
+$>./rot_13 "" | cat -e
+$
+$>
