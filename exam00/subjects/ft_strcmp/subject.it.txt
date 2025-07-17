@@ -1,0 +1,10 @@
+Nome esercizio		: ft_strcmp
+File da consegnare	: ft_strcmp.c
+Funzioni consentite	: 
+--------------------------------------------------------------------------------
+
+Riproduci il comportamento della funzione strcmp (man strcmp).
+
+La tua funzione deve essere dichiarata come segue:
+
+int    ft_strcmp(char *s1, char *s2);

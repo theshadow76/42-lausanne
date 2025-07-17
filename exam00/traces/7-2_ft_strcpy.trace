@@ -1,0 +1,158 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+c2r7s3.42lausanne.ch
+Linux 6.6.72-x64v3-t2-jammy-xanmod1 x86_64
+$> date
+Wed Jul 16 05:14:30 PM CEST 2025
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42lausanne.ch:vogsphere-practice/vwalker_practice_practice-exam_13h33m34s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmp7ucvb9x7/user log --pretty='%H - %an, %ad : %s'
+33247698836fbd3a26e7f5ec28e685d60dcf09b4 - The GOAT from billionairs.com, Wed Jul 16 17:06:28 2025 +0200 : Init
+e51b4a1cc9c487b2c86c99cb925fe9461212be9f - The GOAT from billionairs.com, Wed Jul 16 17:05:14 2025 +0200 : Init
+87279ed19c3279e51c66f9619df4cfa36d62efa4 - The GOAT from billionairs.com, Wed Jul 16 16:59:06 2025 +0200 : Init
+c4c829d2cadf4cda3bfa6099bc4dd5f6023c3385 - The GOAT from billionairs.com, Wed Jul 16 16:53:24 2025 +0200 : Init
+b82dda6308e944aeeba5931c14c4fef9764014e0 - The GOAT from billionairs.com, Wed Jul 16 14:40:48 2025 +0200 : Init
+31526f735b949fa937740bcbd6a903d1c76a8467 - The GOAT from billionairs.com, Wed Jul 16 14:37:37 2025 +0200 : Init
+4e67d65e8a48fc385f1198375680d81e5d774a4c - The GOAT from billionairs.com, Wed Jul 16 14:26:23 2025 +0200 : Init
+cc18e3abac7561fcbbf33d6f7e14d9f9e384f64f - The GOAT from billionairs.com, Wed Jul 16 14:25:04 2025 +0200 : Init
+d69ffd3b9116d8d1230699973cd4f54cc12d3696 - The GOAT from billionairs.com, Wed Jul 16 14:14:05 2025 +0200 : Init
+050484a9d7db8e89ede96411a606349f625ca73c - The GOAT from billionairs.com, Wed Jul 16 14:04:52 2025 +0200 : Init
+c3640716bb1d16107fba0857ed77449ae1c6a3b6 - The GOAT from billionairs.com, Wed Jul 16 14:01:28 2025 +0200 : wq f
+0b868f3090059f290b6a20230b21f6f48beea4b3 - The GOAT from billionairs.com, Wed Jul 16 13:56:43 2025 +0200 : init
+d51770fb6baa7a646a498fe8c68ded915d3cee6d - The GOAT from billionairs.com, Wed Jul 16 13:52:18 2025 +0200 : init
+9b46c69a2151897f1dc0350662de61a3f217a5d2 - The GOAT from billionairs.com, Wed Jul 16 13:40:17 2025 +0200 : init:
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmp7ucvb9x7/user
+/tmp/tmp7ucvb9x7/user:
+total 36
+drwxr-xr-x 2 root root 4096 Jul 16 17:14 ft_mul
+drwxr-xr-x 2 root root 4096 Jul 16 17:14 ft_putstr
+drwxr-xr-x 2 root root 4096 Jul 16 17:14 ft_strcpy
+-rw-r--r-- 1 root root 3636 Jul 16 17:14 __GIT_HISTORY
+drwxr-xr-x 2 root root 4096 Jul 16 17:14 hello
+drwxr-xr-x 2 root root 4096 Jul 16 17:14 maff_alpha
+drwxr-xr-x 2 root root 4096 Jul 16 17:14 occ_a
+drwxr-xr-x 2 root root 4096 Jul 16 17:14 only_z
+drwxr-xr-x 2 root root 4096 Jul 16 17:14 swap_cases
+
+/tmp/tmp7ucvb9x7/user/ft_mul:
+total 4
+-rw-r--r-- 1 root root 953 Jul 16 17:14 ft_mul.c
+
+/tmp/tmp7ucvb9x7/user/ft_putstr:
+total 4
+-rw-r--r-- 1 root root 1013 Jul 16 17:14 ft_putstr.c
+
+/tmp/tmp7ucvb9x7/user/ft_strcpy:
+total 4
+-rw-r--r-- 1 root root 1023 Jul 16 17:14 ft_strcpy.c
+
+/tmp/tmp7ucvb9x7/user/hello:
+total 20
+-rwxr-xr-x 1 root root 15960 Jul 16 17:14 a.out
+-rw-r--r-- 1 root root  1106 Jul 16 17:14 hello.c
+
+/tmp/tmp7ucvb9x7/user/maff_alpha:
+total 20
+-rwxr-xr-x 1 root root 15960 Jul 16 17:14 a.out
+-rw-r--r-- 1 root root  1092 Jul 16 17:14 maff_alpha.c
+
+/tmp/tmp7ucvb9x7/user/occ_a:
+total 4
+-rw-r--r-- 1 root root 1057 Jul 16 17:14 occ_a.c
+
+/tmp/tmp7ucvb9x7/user/only_z:
+total 20
+-rwxr-xr-x 1 root root 15960 Jul 16 17:14 a.out
+-rw-r--r-- 1 root root  1014 Jul 16 17:14 only_z.c
+
+/tmp/tmp7ucvb9x7/user/swap_cases:
+total 4
+-rw-r--r-- 1 root root 1660 Jul 16 17:14 swap_cases.c
+ 
+= ft_strcpy ====================================================================
+$> cc -Wextra -Wall -Werror ft_strcpy.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./h66thaeju7ii3rveieiaycyg ""
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./ngeqy7beo9lrmw2xg3dw4bz8 "gnGrpCY6At"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./hwadxk6h69vjhn6piofjin6p "5sqw"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./yp7e4qnonzfvtk3iuxz9vv7f "6VA1kxS7"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./dk0r1cu34rm7sya693fl30oy "IX35w6Ys4UvH"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./yjopr06sgy4u52lpt6rsulos "SKCzWQd4AuMGLxO0"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./8ko2732njt20yh60qs4itrwy "xTly"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./ihwowax2qs6lokj77tfmj11y "TLIlowmAJid9"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./jnta1zbe6dszr5jvfg5n8nvw "yW7sit8I2UafuvDEL"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./lktorlm72k2harczsuihltbl "8IemWJqZdrT3Q"
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./3ge9lpblxf61i9uwc6xcaj7q "oTOx"
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./khb8vzg1zbumkjf2ts9gga0x "8tlCFePZKR"
+$> diff -U 3 user_output_test12 test12.output | cat -e
+
+Diff OK :D
+= Test 13 ==================================================
+$> ./b0mn0thyz4ofqli0j2s9lxiv "s012YlV"
+$> diff -U 3 user_output_test13 test13.output | cat -e
+
+Diff OK :D
+= Test 14 ==================================================
+$> ./gaxaosmose4qimperta769t4 "6fXmW35F8z0CkQHa"
+$> diff -U 3 user_output_test14 test14.output | cat -e
+
+Diff OK :D
+= Test 15 ==================================================
+$> ./zs2a3qh2693oafth9cq8cq64 "0NfcY1BImCXyneW3"
+$> diff -U 3 user_output_test15 test15.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

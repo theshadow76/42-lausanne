@@ -1,0 +1,20 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+c2r6s2.42lausanne.ch
+Linux 6.6.72-x64v3-t2-jammy-xanmod1 x86_64
+$> date
+Wed Jul 16 01:39:24 PM CEST 2025
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42lausanne.ch:vogsphere-practice/vwalker_practice_practice-exam_13h33m34s.git
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpefw15de_/user
+/tmp/tmpefw15de_/user:
+total 0
+ 
+= only_z =======================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 0 ===============================================================

@@ -1,0 +1,13 @@
+Nome esercizio		: ft_putstr
+File da consegnare 	: ft_putstr.c
+Funzioni consentite	: write
+--------------------------------------------------------------------------------
+
+Scrivi una funzione che stampi una stringa sullo standard output.
+
+Il puntatore passato alla funzione conterrà l'indirizzo del primo carattere
+della stringa.
+
+La tua funzione deve essere dichiarata come segue:
+
+void	ft_putstr(char *str);

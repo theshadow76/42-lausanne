@@ -1,0 +1,11 @@
+Assignment name  : maff_alpha
+Expected files   : maff_alpha.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+\n ile biten ve alfabeyi çift sayılarda büyük harfle, tek sayılarda küçük harfle gösteren bir program yazın.
+
+Örnek:
+
+$> ./maff_alpha | cat -e
+aBcDeFgHiJkLmNoPqRsTuVwXyZ$

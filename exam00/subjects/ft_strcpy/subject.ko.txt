@@ -1,0 +1,10 @@
+Assignment name  : ft_strcpy
+Expected files   : ft_strcpy.c
+Allowed functions:
+--------------------------------------------------------------------------------
+
+함수 strcpy (man stcpy)의 동작을 재현하십시오.
+
+함수는 다음과 같이 선언하십시오.
+char    *ft_strcpy(char *s1, char *s2);
+

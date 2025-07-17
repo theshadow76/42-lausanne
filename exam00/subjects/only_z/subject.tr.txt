@@ -1,0 +1,6 @@
+Assignment name  : only_z
+Expected files   : only_z.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Standart çıktı olarak 'z' karakterini veren bir program yazın.

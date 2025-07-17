@@ -1,0 +1,10 @@
+Assignment name  : ft_strcmp
+Expected files   : ft_strcmp.c
+Allowed functions: 
+--------------------------------------------------------------------------------
+
+함수 strcmp (man strcmp)의 동작을 재현하십시오.
+
+함수는 다음과 같이 선언하십시오.
+
+int ft_strcmp (char * s1, char * s2);

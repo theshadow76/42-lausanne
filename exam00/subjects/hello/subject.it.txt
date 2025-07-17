@@ -1,0 +1,14 @@
+Nome esercizio  : hello
+File da consegnare   : hello.c
+Funzioni richieste: write
+--------------------------------------------------------------------------------
+
+Scrivi un programma che visualizzi "Hello World!" seguito da un \n.
+
+Esempio:
+
+$>./hello
+Hello World!
+$>./hello | cat -e
+Hello World!$
+$>

@@ -1,0 +1,65 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+c2r8s8.42lausanne.ch
+Linux 6.6.72-x64v3-t2-jammy-xanmod1 x86_64
+$> date
+Wed Jul 16 02:14:12 PM CEST 2025
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42lausanne.ch:vogsphere-practice/vwalker_practice_practice-exam_13h33m34s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmp28zyrkjd/user log --pretty='%H - %an, %ad : %s'
+d69ffd3b9116d8d1230699973cd4f54cc12d3696 - The GOAT from billionairs.com, Wed Jul 16 14:14:05 2025 +0200 : Init
+050484a9d7db8e89ede96411a606349f625ca73c - The GOAT from billionairs.com, Wed Jul 16 14:04:52 2025 +0200 : Init
+c3640716bb1d16107fba0857ed77449ae1c6a3b6 - The GOAT from billionairs.com, Wed Jul 16 14:01:28 2025 +0200 : wq f
+0b868f3090059f290b6a20230b21f6f48beea4b3 - The GOAT from billionairs.com, Wed Jul 16 13:56:43 2025 +0200 : init
+d51770fb6baa7a646a498fe8c68ded915d3cee6d - The GOAT from billionairs.com, Wed Jul 16 13:52:18 2025 +0200 : init
+9b46c69a2151897f1dc0350662de61a3f217a5d2 - The GOAT from billionairs.com, Wed Jul 16 13:40:17 2025 +0200 : init:
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmp28zyrkjd/user
+/tmp/tmp28zyrkjd/user:
+total 20
+drwxr-xr-x 2 root root 4096 Jul 16 14:14 ft_mul
+-rw-r--r-- 1 root root 1630 Jul 16 14:14 __GIT_HISTORY
+drwxr-xr-x 2 root root 4096 Jul 16 14:14 hello
+drwxr-xr-x 2 root root 4096 Jul 16 14:14 maff_alpha
+drwxr-xr-x 2 root root 4096 Jul 16 14:14 only_z
+
+/tmp/tmp28zyrkjd/user/ft_mul:
+total 4
+-rw-r--r-- 1 root root 969 Jul 16 14:14 ft_mul.c
+
+/tmp/tmp28zyrkjd/user/hello:
+total 20
+-rwxr-xr-x 1 root root 15960 Jul 16 14:14 a.out
+-rw-r--r-- 1 root root  1106 Jul 16 14:14 hello.c
+
+/tmp/tmp28zyrkjd/user/maff_alpha:
+total 20
+-rwxr-xr-x 1 root root 15960 Jul 16 14:14 a.out
+-rw-r--r-- 1 root root  1092 Jul 16 14:14 maff_alpha.c
+
+/tmp/tmp28zyrkjd/user/only_z:
+total 20
+-rwxr-xr-x 1 root root 15960 Jul 16 14:14 a.out
+-rw-r--r-- 1 root root  1014 Jul 16 14:14 only_z.c
+ 
+= ft_mul =======================================================================
+$> cc -Wextra -Wall -Werror ft_mul.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./aw2ivgh9yra3q8gcfulbz2tj "-8032" "-9100"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1	2025-07-16 12:14:12.765439292 +0000$
++++ test1.output	2025-07-16 12:14:12.749438785 +0000$
+@@ -1 +1 @@$
+--8032$
++73091200$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

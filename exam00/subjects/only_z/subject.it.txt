@@ -1,0 +1,6 @@
+Nome esercizio  : only_z
+File da consegnare   : only_z.c
+Funzioni consentite: write
+--------------------------------------------------------------------------------
+
+Scrivi un programma che stampi un carattere 'z' sullo standard output.

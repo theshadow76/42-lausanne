@@ -1,0 +1,10 @@
+Nome esercizio		: ft_strcpy
+File da consegnare	: ft_strcpy.c
+Funzioni consentite	: 
+--------------------------------------------------------------------------------
+
+Riproduci il comportamento della funzione strcpy (man strcpy).
+
+La tua funzione deve essere dichiarata come segue:
+
+char    *ft_strcpy(char *s1, char *s2);

@@ -1,0 +1,13 @@
+Nome esercizio		: ft_atoi
+File da consegnare	: ft_atoi.c
+Funzioni consentite	: Nessuna
+--------------------------------------------------------------------------------
+
+Scrivi una funzione che converta un argomento stringa str in un intero (type int)
+e lo restituisca.
+
+Funziona pressapoco come la funzione atoi standard(const char *str), vedi il man.
+
+La tua funzione deve essere dichiarata come segue:
+
+int	ft_atoi(const char *str);

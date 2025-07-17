@@ -1,0 +1,11 @@
+Assignment name  : ft_putstr
+Expected files   : ft_putstr.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+문자열을 표준출력에 출력하는 함수를 작성하시오.
+
+함수가 넘겨받는  포인터에 문자열의 첫번째 문자의 주소가 저장되어있습니다.
+
+함수는 다음과 같이 정의하십시오:
+void    ft_putstr(char *str);

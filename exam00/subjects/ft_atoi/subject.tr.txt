@@ -1,0 +1,11 @@
+Assignment name  : ft_atoi
+Expected files   : ft_atoi.c
+Allowed functions: None
+--------------------------------------------------------------------------------
+String(metin) str'yi argüman olarak alıp sayıya (type int) çevirecek ve döndürecek bir fonksiyon yazın.
+
+Program standart atoi(const char *str) fonksiyonuna çok benzer bir şekilde çalışıyor , man'e bakın.
+
+Fonksiyonunuz aşağıdaki gibi bildirilmelidir:
+
+int	ft_atoi(const char *str);

@@ -1,0 +1,13 @@
+Assignment name  : maff_alpha
+Expected files   : maff_alpha.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+알파벳을 순서대로 출력하는 프로그램을 작성하십시오.
+짝수 위치에 있는 문자는 대문자로,
+홀수 위치에 있는 문자는 소문자로 출력하고 줄바꿈을 하십시오.
+
+Example:
+
+$> ./maff_alpha | cat -e
+aBcDeFgHiJkLmNoPqRsTuVwXyZ$

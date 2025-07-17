@@ -1,0 +1,12 @@
+Nome esercizio  : maff_alpha
+File da consegnare   : maff_alpha.c
+Funzioni consentite: write
+--------------------------------------------------------------------------------
+
+Scrivi un programma che visualizzi l'alfabeto, con le lettere pari in maiuscolo e le lettere dispari in minuscolo, seguito da una nuova riga.
+
+
+Esempio:
+
+$> ./maff_alpha | cat -e
+aBcDeFgHiJkLmNoPqRsTuVwXyZ$

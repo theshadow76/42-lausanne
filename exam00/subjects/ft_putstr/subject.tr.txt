@@ -1,0 +1,13 @@
+Assignment name  : ft_putstr
+Expected files   : ft_putstr.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Standart çıktıda bir string(metin) gösteren bir fonksiyon yazınız.
+
+Fonksiyona verilen pointer(işaretçi), string(metin)'in ilk karakterinin adresine
+sahiptir.
+
+Fonksiyonunuz aşağıdaki gibi tanımlanmalıdır:
+
+void	ft_putstr(char *str);

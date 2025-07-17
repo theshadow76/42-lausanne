@@ -1,0 +1,62 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+c2r7s3.42lausanne.ch
+Linux 6.6.72-x64v3-t2-jammy-xanmod1 x86_64
+$> date
+Wed Jul 16 02:25:15 PM CEST 2025
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42lausanne.ch:vogsphere-practice/vwalker_practice_practice-exam_13h33m34s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmp8ccxsyaz/user log --pretty='%H - %an, %ad : %s'
+cc18e3abac7561fcbbf33d6f7e14d9f9e384f64f - The GOAT from billionairs.com, Wed Jul 16 14:25:04 2025 +0200 : Init
+d69ffd3b9116d8d1230699973cd4f54cc12d3696 - The GOAT from billionairs.com, Wed Jul 16 14:14:05 2025 +0200 : Init
+050484a9d7db8e89ede96411a606349f625ca73c - The GOAT from billionairs.com, Wed Jul 16 14:04:52 2025 +0200 : Init
+c3640716bb1d16107fba0857ed77449ae1c6a3b6 - The GOAT from billionairs.com, Wed Jul 16 14:01:28 2025 +0200 : wq f
+0b868f3090059f290b6a20230b21f6f48beea4b3 - The GOAT from billionairs.com, Wed Jul 16 13:56:43 2025 +0200 : init
+d51770fb6baa7a646a498fe8c68ded915d3cee6d - The GOAT from billionairs.com, Wed Jul 16 13:52:18 2025 +0200 : init
+9b46c69a2151897f1dc0350662de61a3f217a5d2 - The GOAT from billionairs.com, Wed Jul 16 13:40:17 2025 +0200 : init:
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmp8ccxsyaz/user
+/tmp/tmp8ccxsyaz/user:
+total 20
+drwxr-xr-x 2 root root 4096 Jul 16 14:25 ft_mul
+-rw-r--r-- 1 root root 1903 Jul 16 14:25 __GIT_HISTORY
+drwxr-xr-x 2 root root 4096 Jul 16 14:25 hello
+drwxr-xr-x 2 root root 4096 Jul 16 14:25 maff_alpha
+drwxr-xr-x 2 root root 4096 Jul 16 14:25 only_z
+
+/tmp/tmp8ccxsyaz/user/ft_mul:
+total 20
+-rwxr-xr-x 1 root root 15960 Jul 16 14:25 a.out
+-rw-r--r-- 1 root root   967 Jul 16 14:25 ft_mul.c
+
+/tmp/tmp8ccxsyaz/user/hello:
+total 20
+-rwxr-xr-x 1 root root 15960 Jul 16 14:25 a.out
+-rw-r--r-- 1 root root  1106 Jul 16 14:25 hello.c
+
+/tmp/tmp8ccxsyaz/user/maff_alpha:
+total 20
+-rwxr-xr-x 1 root root 15960 Jul 16 14:25 a.out
+-rw-r--r-- 1 root root  1092 Jul 16 14:25 maff_alpha.c
+
+/tmp/tmp8ccxsyaz/user/only_z:
+total 20
+-rwxr-xr-x 1 root root 15960 Jul 16 14:25 a.out
+-rw-r--r-- 1 root root  1014 Jul 16 14:25 only_z.c
+ 
+= ft_mul =======================================================================
+$> cc -Wextra -Wall -Werror ft_mul.c main.c -o user_exe 
+ft_mul.c:15:6: error: unused variable 'result' [-Werror,-Wunused-variable]
+        int     result;
+                ^
+1 error generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================
